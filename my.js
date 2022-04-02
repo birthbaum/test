@@ -14,12 +14,11 @@
  function addGS(){
  
  const url = "https://script.google.com/macros/s/AKfycbwy8Zc4zEvICVHr-dKe0E9IeYbNDBzPTjMqFSlfBQ_3T67kXUntCz86NMc8i2zK5iEO1g/exec";
-              
+
     fetch(url,{
         method: 'POST',
         mode: 'no-cors',
         cache: 'no-cache',
-        credentials: 'omit',
         headers: {
             'Content-Type': 'application/json'
         },
