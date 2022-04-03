@@ -23,7 +23,7 @@
             'Content-Type': 'application/json'
         },
         redirect: 'follow',
-        body: JSON.stringify({name: "Olivia"})
+        body: JSON.stringify({Student_Name: "Edward",	Gender: "Male",	Class_Level: "4. Senior",	Home_State: "IL",	Major: "Math",	Extracurricular_Activity: "Coding"})
  });
   
 }
