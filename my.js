@@ -30,7 +30,7 @@ function testGS(){
             'Content-Type': 'application/json'
         },
         redirect: 'follow',
-        body: JSON.stringify({"Student Name":fName,"Gender":fGender,"Class Level":fGrade,"State":fState,"Major":fMajor,"Extracurricular Activity":fExt})
+        body: JSON.stringify({"StudentName":fName,"Gender":fGender,"ClassLevel":fGrade,"State":fState,"Major":fMajor,"ExtracurricularActivity":fExt})
  });
   
 }
