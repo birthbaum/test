@@ -39,5 +39,3 @@ document.getElementById("btn2").addEventListener("click", function clickEvent(){
     addGS();
     document.getElementById('form1').reset();
 });
-
-document.getElementById("btn").addEventListener("click", testGS);
