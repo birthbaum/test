@@ -15,7 +15,7 @@ function testGS(){
  
  const url = "https://script.google.com/macros/s/AKfycbwy8Zc4zEvICVHr-dKe0E9IeYbNDBzPTjMqFSlfBQ_3T67kXUntCz86NMc8i2zK5iEO1g/exec";
   
- const fName = document.getElementById("inputfname");
+ const fName = document.getElementById("inputfname").value();
 
     fetch(url,{
         method: 'POST',
