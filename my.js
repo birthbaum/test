@@ -22,7 +22,6 @@ function testGS(){
  fMajor = document.getElementById("inputmajor").value;
  fExt = document.getElementById("inputext").value;
 
-
     fetch(url,{
         method: 'POST',
         mode: 'no-cors',
@@ -36,7 +35,9 @@ function testGS(){
   
 }
 
-
-document.getElementById("btn2").addEventListener("click", addGS);
+document.getElementById("btn2").addEventListener("click", function clickEvent(){
+    addGS();
+    document.getElementById('form1').reset();
+});
 
 document.getElementById("btn").addEventListener("click", testGS);
