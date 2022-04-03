@@ -16,6 +16,12 @@ function testGS(){
  const url = "https://script.google.com/macros/s/AKfycbwy8Zc4zEvICVHr-dKe0E9IeYbNDBzPTjMqFSlfBQ_3T67kXUntCz86NMc8i2zK5iEO1g/exec";
 
  fName = document.getElementById("inputfname").value;
+ fGender = document.getElementById("inputgender").value;
+ fGrade = document.getElementById("inputgl").value;
+ fState = document.getElementById("inputstate").value;
+ fMajor = document.getElementById("inputmajor").value;
+ fExt = document.getElementById("inputext").value;
+
 
     fetch(url,{
         method: 'POST',
@@ -25,7 +31,7 @@ function testGS(){
             'Content-Type': 'application/json'
         },
         redirect: 'follow',
-        body: JSON.stringify({"Student Name":fName,"Gender":"Male","Class Level":"4. Senior","State":"IL","Major":"Math","Extracurricular Activity":"Business Intelligence"})
+        body: JSON.stringify({"Student Name":fName,"Gender":fGender,"Class Level":fGrade,"State":fState,"Major":fMajor,"Extracurricular Activity":fExt})
  });
   
 }
